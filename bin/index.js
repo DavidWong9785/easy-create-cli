@@ -4,12 +4,12 @@ const chalk = require('../util/chalk-extends'); // 命令行输出美化
 const Option = require('../lib/option')
 const Create = require('../lib/create')
 
-const common = require('../util/common')
 const requiredNodeVersion = require('../package.json').engines.node;
+
+const common = require('../util/common')
 const { checkNodeVersion, validateArguments, suggestCommands } = common
 
 const commandConfig = require('../config/commandConfig');
-const { command, arguments } = require('commander');
 
 log = console.log
 

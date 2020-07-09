@@ -30,7 +30,7 @@ module.exports = {
         [
             {
                 type: 'input',
-                name: 'projectName',
+                name: 'eventName',
                 message: chalk.SILVER('项目名称'),
             }
         ]
@@ -76,7 +76,7 @@ module.exports = {
         [
             {
                 type: 'input',
-                name: 'projectName',
+                name: 'eventName',
                 message: chalk.SILVER('项目名称'),
             }
         ]
