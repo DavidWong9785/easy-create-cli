@@ -15,6 +15,7 @@ npm run init-set
 
 # 配置命令
 ```
+// 找到 config/commandConfig.js，并配置相应命令
 module.exports = {
 	// 版本信息
     version: '0.1.0',
@@ -48,6 +49,7 @@ module.exports = {
 
 # 配置参数
 ```
+// 找到 config/optionConfig.js，并配置相应参数
 const chalk = require('../util/chalk-extends')
 module.exports = {
 	// 命令参数
