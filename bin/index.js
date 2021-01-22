@@ -31,7 +31,7 @@ program.arguments('<command>').action(cmd => {
   program.outputHelp();
   log(`  ` + chalk.TOMATO(`非法命令 ${chalk.GOLD(cmd)}.`));
   log();
-  suggestCommands(cmd);
+  suggestCommands(cmd, program);
 });
 
 // 初始化项目模板
