@@ -3,6 +3,8 @@
 
 # 安装
 ```
+git clone https://github.com/DavidWong9785/easy-create-cli.git
+
 cnpm i
 ```
 
