@@ -9,9 +9,12 @@ if (file.haveInit) {
     console.log("已添加到环境变量");
     return
 }
+let targetENV = `${pathEVN};${process.cwd()};`
+targetENV = Array.from(new Set(targetENV.split(';'))).join(';')
+
 const child = spawn(
 	'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe',
-	[`[environment]::SetEnvironmentvariable('Path','${pathEVN};${process.cwd()};','User')`],
+    [`[environment]::SetEnvironmentvariable('Path','${targetENV};','User')`],
 );
 child.stderr.on("data",function(data){
     console.log("环境变量写入失败: " + data);
